@@ -1,0 +1,8 @@
+Python Version: 3.13.5 | packaged by Anaconda, Inc. | (main, Jun 12 2025, 11:23:37) [Clang 14.0.6 ]
+Platform: Darwin
+Platform Version: Darwin Kernel Version 24.6.0: Mon Jul 14 11:30:40 PDT 2025; root:xnu-11417.140.69~1/RELEASE_ARM64_T8132
+Platform Release: 24.6.0
+Machine Type: arm64
+Processor: arm
+Pandas Version: 2.2.3
+Numpy Version: 2.1.3
