@@ -51,7 +51,6 @@ To get started, clone this repository:
 git clone https://github.com/yourusername/ME-CFS-Diagnosis-Prediction.git
 To add this information to your README file in a clear and organized manner, you can structure it as follows:
 
----
 
 # Machine Learning Model Training and Evaluation
 
@@ -68,18 +67,18 @@ This project focuses on training and evaluating several machine learning models 
 
 Each model is trained using a pipeline that includes preprocessing steps such as:
 
-* **Imputation** (for handling missing values)
-* **Scaling** (StandardScaler)
-* **One-Hot Encoding** (for categorical features)
+- **Imputation** (for handling missing values)
+- **Scaling** (StandardScaler)
+- **One-Hot Encoding** (for categorical features)
 
 ## Model Evaluation
 
 The models were evaluated on a test set using **5-fold cross-validation**. The evaluation metrics include:
 
-* **Accuracy**: Proportion of correctly predicted instances.
-* **Precision**: Proportion of true positive predictions over all positive predictions.
-* **Recall**: Proportion of true positive predictions over all actual positives.
-* **F1-Score**: Harmonic mean of precision and recall.
+- **Accuracy**: Proportion of correctly predicted instances.
+- **Precision**: Proportion of true positive predictions over all positive predictions.
+- **Recall**: Proportion of true positive predictions over all actual positives.
+- **F1-Score**: Harmonic mean of precision and recall.
 
 ### Performance Results on the Test Set
 
@@ -96,25 +95,7 @@ From the above results, **Random Forest** and **Logistic Regression** were found
 
 ## Saved Models
 
-The following models have been trained and saved for future use:
-
-* **knn_best_model_with_encoder.pkl**: Saved KNN model with label encoder.
-* **logistic_regression.joblib**: Saved Logistic Regression model.
-* **decision_tree.joblib**: Saved Decision Tree model.
-* **random_forest.joblib**: Saved Random Forest model.
-* **svm.joblib**: Saved Support Vector Machine model.
-* **knn.joblib**: Saved KNN model.
-
-## Datasets
-
-* **train_stratified.csv**: Training dataset with stratified splits.
-* **test_stratified.csv**: Test dataset with stratified splits.
-
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
-
----
-
-This format provides a clean structure for presenting the project details, model evaluations, and file information in your README. You can copy-paste the content and adjust any specifics according to your project.
-
+- **Random Forest Model**: saved as `random_forest_model.joblib`
+- **Logistic Regression Model**: saved as `logistic_regression_model.joblib`
+- **KNN Model**: saved as `knn_model.joblib`
+- **SVM Model**: saved as `svm_model.joblib`
