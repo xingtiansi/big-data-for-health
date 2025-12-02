@@ -49,3 +49,72 @@ To get started, clone this repository:
 
 ```bash
 git clone https://github.com/yourusername/ME-CFS-Diagnosis-Prediction.git
+To add this information to your README file in a clear and organized manner, you can structure it as follows:
+
+---
+
+# Machine Learning Model Training and Evaluation
+
+This project focuses on training and evaluating several machine learning models for a multi-class classification task. The models are evaluated based on various metrics including accuracy, precision, recall, and F1-score. The following machine learning models were trained:
+
+## Models Trained
+
+1. **Logistic Regression** (multi-class classification)
+2. **Decision Tree Classifier**
+3. **Random Forest Classifier**
+4. **K-Nearest Neighbors (KNN)**
+5. **Support Vector Machine (SVM)**
+6. **Baseline Model** (Majority Class)
+
+Each model is trained using a pipeline that includes preprocessing steps such as:
+
+* **Imputation** (for handling missing values)
+* **Scaling** (StandardScaler)
+* **One-Hot Encoding** (for categorical features)
+
+## Model Evaluation
+
+The models were evaluated on a test set using **5-fold cross-validation**. The evaluation metrics include:
+
+* **Accuracy**: Proportion of correctly predicted instances.
+* **Precision**: Proportion of true positive predictions over all positive predictions.
+* **Recall**: Proportion of true positive predictions over all actual positives.
+* **F1-Score**: Harmonic mean of precision and recall.
+
+### Performance Results on the Test Set
+
+| Model                   | Accuracy | Macro F1 |
+| ----------------------- | -------- | -------- |
+| **Baseline**            | 0.401    | 0.191    |
+| **Logistic Regression** | 0.768    | 0.762    |
+| **Decision Tree**       | 0.701    | 0.691    |
+| **Random Forest**       | 0.806    | 0.787    |
+| **SVM**                 | 0.767    | 0.753    |
+| **KNN**                 | 0.711    | 0.699    |
+
+From the above results, **Random Forest** and **Logistic Regression** were found to be the top-performing models, with high **F1-scores** on both the training and test sets.
+
+## Saved Models
+
+The following models have been trained and saved for future use:
+
+* **knn_best_model_with_encoder.pkl**: Saved KNN model with label encoder.
+* **logistic_regression.joblib**: Saved Logistic Regression model.
+* **decision_tree.joblib**: Saved Decision Tree model.
+* **random_forest.joblib**: Saved Random Forest model.
+* **svm.joblib**: Saved Support Vector Machine model.
+* **knn.joblib**: Saved KNN model.
+
+## Datasets
+
+* **train_stratified.csv**: Training dataset with stratified splits.
+* **test_stratified.csv**: Test dataset with stratified splits.
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more details.
+
+---
+
+This format provides a clean structure for presenting the project details, model evaluations, and file information in your README. You can copy-paste the content and adjust any specifics according to your project.
+
