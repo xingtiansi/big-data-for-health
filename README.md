@@ -97,14 +97,14 @@ The models were evaluated on a test set using **5-fold cross-validation**. The e
 
 ### Performance Results on the Test Set
 
-| Model                   | Accuracy | Macro F1 |
+| Model                   | Avg cost | Macro F1 |
 | ----------------------- | -------- | -------- |
-| **Baseline**            | 0.401    | 0.191    |
-| **Logistic Regression** | 0.768    | 0.762    |
-| **Decision Tree**       | 0.701    | 0.691    |
-| **Random Forest**       | 0.806    | 0.787    |
-| **SVM**                 | 0.767    | 0.753    |
-| **KNN**                 | 0.711    | 0.699    |
+| **Baseline**            | 1.448    | 0.191    |
+| **Logistic Regression** | 0.670    | 0.763    |
+| **Decision Tree**       | 0.620    | 0.782    |
+| **Random Forest**       | 0.602    | 0.790    |
+| **SVM**                 | 0.713    | 0.750    |
+| **KNN**                 | 0.735    | 0.751    |
 
 From the above results, **Random Forest** and **Logistic Regression** were found to be the top-performing models, with high **F1-scores** on both the training and test sets.
 
