@@ -106,7 +106,7 @@ The models were evaluated on a test set using **5-fold cross-validation**. The e
 | **SVM**                 | 0.713    | 0.750    |
 | **KNN**                 | 0.735    | 0.751    |
 
-From the above results, **Random Forest** and **Logistic Regression** were found to be the top-performing models, with high **F1-scores** on both the training and test sets.
+From the above results, **Random Forest** was found to be the top-performing models, with high **F1-scores** on both the training and test sets.
 
 ## Saved Models
 
